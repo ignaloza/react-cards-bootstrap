@@ -6,7 +6,7 @@ import "./card.css";
 function Card({ imageSource, title, text, url }) {
   return (
     <div className="card text-center bg-dark animate__animated animate__fadeInUp">
-      <div className="overflow">
+      <div className="container">
         <img src={imageSource} alt="a wallpaper" className="card-img-top" />
       </div>
       <div className="card-body text-light">
@@ -14,15 +14,23 @@ function Card({ imageSource, title, text, url }) {
         <p className="card-text text-secondary">
           {text
             ? text
-            : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt fuga accusantium excepturi quia, voluptates obcaecati nam in voluptas perferendis velit harum dignissimos quasi ex? Tempore repellat quo doloribus magnam."}
+            : "Recivi 5€ alla convalida del documento e un bonus pari al 30% dell'importo giocato fino al 35€ se la giocatta è perdente. Ogni setimana per 31 settimane ricevi fino a 10 € di bonus Scommesse sportive, sbloccabili a scaglioni da 1e ogni 10 Status Point ottenuti."}
         </p>
+        <a
+          href={url ? url : "#!"}
+          target="_blank"
+          className="btn btn-primary"
+          rel="noreferrer"
+        >
+        Verifica Offerta
+        </a>
         <a
           href={url ? url : "#!"}
           target="_blank"
           className="btn btn-outline-secondary border-0"
           rel="noreferrer"
         >
-          Go to {title}
+        Si applicano T&C
         </a>
       </div>
     </div>
