@@ -66,9 +66,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### Resources
-
-- [Gradient.io](https://cssgradient.io/)
-- [Flat Color Palette - Drible.com/Ebtihaj](https://dribbble.com/shots/4133181-Flat-Color-Palette)
-- [Oxygen Font](https://fonts.google.com/specimen/Oxygen?preview.text_type=custom&sidebar.open=true&selection.family=Oxygen:wght@300)
