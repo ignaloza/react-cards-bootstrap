@@ -1,10 +1,6 @@
 import React from "react";
 import Card from "./Card";
 import "./card.css"
-
-import image1 from "../assets/image1.jpg";
-import image2 from '../assets/image2.jpg'
-import image3 from '../assets/image3.jpg'
 import sisal from "../assets/sisal.jpg"
 import betclic from "../assets/betclic.jpg";
 import codere from "../assets/codere.jpg";
@@ -19,49 +15,57 @@ const cards = [
     id: 1,
     title: "5 € convalida documento +350€ massimo di benvenuto",
     image: sisal,
-    url: "https://faztweb.com",
+    text:"Recivi 5€ alla convalida del documento e un bonus pari al 30% dell'importo giocato fino al 35€ se la giocatta è perdente. Ogni setimana per 31 settimane ricevi fino a 10 € di bonus Scommesse sportive, sbloccabili a scaglioni da 1e ogni 10 Status Point ottenuti.",
+    url: "https://areaprivata.sisal.it/registrazioneJwt/",
   },
   {
     id: 2,
-    title: "5 € convalida documento +350€ massimo di benvenuto",
+    title: "50% del primo deposito fino a 20€ + 100% del primo deposito fino a 1000€",
     image: betclic,
-    url: "https://blog.faztweb.com",
+    text:"Ricevi 50% del primo deposito fino a un massimo di 20€ ed il 100% del primo deposito fino a un masssimo di 1000€",
+    url: "https://wlbetclic.adsrv.eacdn.com/C.ashx?btag=a_28200b_18011c_&affid=18196&siteid=28200&adid=18011&c=&AutoR=1",
   },
   {
     id: 3,
-    title: "Fazt Youtube",
+    title: "Offerta benvenuto Sport - Gioca 10€ Ottieni 10€",
     image: codere,
-    url: "https://youtube.com/fazttech",
+    text:"Effettua un deposito di almeno 10€- Effettua una scommessa sportiva di almeno 10€ - Ricevi 10€ gratis in Freebet",
+    url: "https://www.codere.it/pacchetto-benvenuto",
   },
   {
     id: 4,
-    title: "Fazt Youtube",
-    image: eurobet,
-    url: "https://youtube.com/fazttech",
+    title: "Bonus fino a 10€",
+    image: goldbet,
+    text:"25% fino a 50€ + 5€ a settimana per 21 settimane.",
+    url: "https://promo.goldbet.it/bonus-di-benvenuto/bonus-benvenuto-primo-deposito--",
   },
   {
     id: 5,
-    title: "Fazt Youtube",
-    image: bwin,
-    url: "https://youtube.com/fazttech",
+    title: "Bonus di Benvenuto Sport fino a 365€",
+    image: planetwin,
+    text:"Il Bonus Play500 di Planetwin365 permetterà al nuovi clienti di ricevere un Bonus deposito iniziale pari al 50% dell'importo del Deposito Qualificante iniziale fino ad un massimo di 300€ e del Bonus Extra (riscattabili in ulteriori 2 tranche) fino a 200€, quindi fino a 500€ totali.",
+    url: "https://promos.planetwin365.it/planetwin/?btag=654687_1E385BBDCD374ACCB9B32BEE4B2EDC6E",
   },
   {
     id: 6,
-    title: "Fazt Youtube",
-    image: planetwin,
-    url: "https://youtube.com/fazttech",
+    title: "5€ subito al deposito + 10€ fino a 100€ di Bonus",
+    image:  eurobet,
+    text:"Registrati, deposita e scommetti: ricevi subito 5€ per le scommesse sportive più un bonus di benvenuto del 50% dell'importo delle scommesse sportive effettuate entro 7 giorni dalla registrazione, fino a un massimo di 100€! ",
+    url: "https://www.eurobet.it/it/landing/scommesse/welcome-bonus-sport-casino/?partid=X3OMaenD6jbOApj4wnyeFWNd7ZgqdRLk&maagid=3351&amc_cid=af_landing_null_bonus-sport-casino_null",
   },
   {
     id: 7,
-    title: "goldbet",
-    image: goldbet,
-    url: "https://youtube.com/fazttech",
+    title: "Scegli tra i vari bonus disponibili il più adatto a te",
+    image: bwin,
+    text:"Quotte Maggiorate - Multiple Maggiorate - Bonus Multipla. In più vivi tutto lo sport in diretta su bwin. ",
+    url: "https://promo.bwin.it/it/promo/s/p/sports/accaboost?wm=5178815",
   },
   {
     id: 8,
-    title: "Fazt Youtube",
+    title: "5€ FREE + BONUS FINO A 350€",
     image: snai,
-    url: "https://youtube.com/fazttech",
+    text:"Ricevi 25€ su prima giocata sportiva, 25€ su prima giocata virtuale e 10€ a settimana.",
+    url: "https://www.snai.it/services/info/scommesse/?COD_PROM=BB_SPORT&provenienza=nr/&btag=917027_512847D51DDC4A318C39E95DC0A124D4",
   },
 ];
 
@@ -69,9 +73,9 @@ function Cards() {
   return (
     <div className="container d-flex justify-content-center align-items-center">
       <div className="row justify-content-center align-items-center  h-100">
-        {cards.map(({ title, image, url, id }) => (
+        {cards.map(({ title, image, text, url, id }) => (
           <div className="col-md-6" key={id}>
-            <Card imageSource={image} title={title} url={url} />
+            <Card imageSource={image} title={title} text={text} url={url} />
           </div>
         ))}
       </div>
