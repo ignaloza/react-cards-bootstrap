@@ -1,12 +1,16 @@
 .App {
-  font-family: 'Oxygen', sans-serif;
-  background: #1a233a;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a233a;
 }
-.footer{
+.row{
   background-color: #1a233a;
   color: white;
-  padding: 0;
-  margin:0px;
-  border:0px;
 }
+.content{
+  padding:0px;
+}
+.mid-footy{
+  margin-right:0px;
+  width: 95%;
 
+}

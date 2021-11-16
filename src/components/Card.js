@@ -17,14 +17,14 @@ function Card({ imageSource, title, text, url }) {
         </p>
         </div>
         <div className="card-low">
-        <a
+          <a
           href={url ? url : "#!"}
           target="_blank"
           className="btn btn-primary font-weight-bold"
           rel="noreferrer"
-        >
+          >
         Verifica Offerta
-        </a>
+          </a>
         <a
           href={url ? url : "#!"}
           target="_blank"

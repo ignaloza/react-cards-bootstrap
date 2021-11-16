@@ -15,7 +15,7 @@ const cards = [
     id: 1,
     title: "5 € convalida documento +350€ massimo di benvenuto",
     image: sisal,
-    text:"Recivi 5€ alla convalida del documento e un bonus pari al 30% dell'importo giocato fino al 35€ se la giocatta è perdente. Ogni setimana per 31 settimane ricevi fino a 10 € di bonus Scommesse sportive, sbloccabili a scaglioni da 1e ogni 10 Status Point ottenuti.",
+    text:"Recivi 5€ alla convalida del documento e un bonus pari al 30% dell'importo giocato fino al 35€ se la giocatta è perdente. Ogni setimana per 31 settimane ricevi fino a 10 € di bonus Scommesse sportive, sbloccabili a scaglioni da 1€ ogni 10 Status Point ottenuti.",
     url: "https://areaprivata.sisal.it/registrazioneJwt/",
   },
   {
@@ -66,7 +66,7 @@ const cards = [
     image: snai,
     text:"Ricevi 25€ su prima giocata sportiva, 25€ su prima giocata virtuale e 10€ a settimana.",
     url: "https://www.snai.it/services/info/scommesse/?COD_PROM=BB_SPORT&provenienza=nr/&btag=917027_512847D51DDC4A318C39E95DC0A124D4",
-  },
+  }, 
 ];
 
 function Cards() {
