@@ -5,19 +5,22 @@ import "./card.css";
 
 function Card({ imageSource, title, text, url }) {
   return (
-    <div className="card text-center bg-dark animate__animated animate__fadeInUp">
-      <div className="conten-img">
+    
+    <div className="card col text-center animate__animated animate__fadeInUp">
+      <div className="conten-img border-0">
         <img src={imageSource} alt="a wallpaper" className="img"/>
         </div>
-      <div className="card-body text-light">
-        <h4 className="card-title">{title}</h4>
-        <p className="card-text">
+      <div className="card-body text-text-info">
+        <h4 className="card-title font-weight-bold text-info">{title}</h4>
+        <p className="card-text text-secondary font-weight-bold">
           {text}
         </p>
+        </div>
+        <div className="card-low">
         <a
           href={url ? url : "#!"}
           target="_blank"
-          className="btn btn-primary"
+          className="btn btn-primary font-weight-bold"
           rel="noreferrer"
         >
         Verifica Offerta
@@ -25,7 +28,7 @@ function Card({ imageSource, title, text, url }) {
         <a
           href={url ? url : "#!"}
           target="_blank"
-          className="btn btn-outline-secondary border-0"
+          className="btn btn-outline-secondary border-0 font-weight-light"
           rel="noreferrer"
         >
         Si applicano T&C

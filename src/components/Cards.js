@@ -71,8 +71,8 @@ const cards = [
 
 function Cards() {
   return (
-    <div className="container d-flex justify-content-center align-items-center">
-      <div className="row justify-content-center align-items-center  h-100">
+    <div className="container d-flex justify-content-center align-items-center border-0">
+      <div className="row justify-content-center align-items-center  h-100 border-0">
         {cards.map(({ title, image, text, url, id }) => (
           <div className="col-md-6" key={id}>
             <Card imageSource={image} title={title} text={text} url={url} />
