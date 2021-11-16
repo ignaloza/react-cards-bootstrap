@@ -1,38 +1,55 @@
+.title {
+  color:#5B92FF;
+  padding: 10px;
+}
+
+.subtitle {
+  color: #a8c5ff !important;
+
+}
+
+
 .row{
   background-color:  #1a233a;
   margin-right:auto;
   margin-left: auto;
   padding: 10px;
+  
 }
 .col-md-6{
   padding: 10px;
   border:0px;
   background-color:  #1a233a;
-  border-color:#272e48;
-
+  border-style: none;
 }
 .card{
   border-color:#272e48;
-  height:332px;
+  height:315px;
   width:570px;
   background-color: #272e48;
   background-image: linear-gradient(to bottom, rgba(39, 46, 72) 0%, rgba(39, 46, 72) 100%), linear-gradient(to bottom, rgba(240, 40, 40, 1) 0%, rgba(240, 40, 40, 1) 100%);
   background-clip: content-box, padding-box;
+  
 
 }
 .card-body {
   background-color: #272e48;
   border:0px;
   padding:10px;
+  
 }
 .card-title{
-  color: #5B92FF;
   border-color:#272e48;
-  font-size:18px;
+  font-size:16px;
+  color:#5B92FF;
+  font-weight:bold;
 }
 
 .card-text {
-  font-size: 16px
+  
+  font-size: 15px;
+  color: #a8c5ff;
+  margin: 3px;
   
 }
 
@@ -42,6 +59,7 @@
   align-items: center;
   background-color: #1a233a;
   padding:10px;
+  color:#a8c5ff
   
 }
 

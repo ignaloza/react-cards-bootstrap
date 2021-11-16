@@ -11,11 +11,12 @@ function Card({ imageSource, title, text, url }) {
         <img src={imageSource} alt="a wallpaper" className="img"/>
         </div>
       <div className="card-body text-text-info">
-        <h4 className="card-title font-weight-bold text-info">{title}</h4>
-        <p className="card-text text-secondary font-weight-bold">
+        <h4 className="card-title font-weight-bold">{title}</h4>
+        <p className="card-text font-weight-bold ">
           {text}
         </p>
         </div>
+        <div className="content">
         <div className="card-low">
           <a
           href={url ? url : "#!"}
@@ -23,16 +24,17 @@ function Card({ imageSource, title, text, url }) {
           className="btn btn-primary font-weight-bold"
           rel="noreferrer"
           >
-        Verifica Offerta
+            Verifica Offerta
           </a>
-        <a
+          <a
           href={url ? url : "#!"}
           target="_blank"
-          className="btn btn-outline-secondary border-0 font-weight-light"
+          className="btn border-0 font-weight-light text-white"
           rel="noreferrer"
-        >
-        Si applicano T&C
-        </a>
+          >
+          Si applicano T&C
+          </a>
+        </div>
       </div>
     </div>
   );

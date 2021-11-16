@@ -71,15 +71,23 @@ const cards = [
 
 function Cards() {
   return (
-    <div className="container d-flex justify-content-center align-items-center border-0">
-      <div className="row justify-content-center align-items-center  h-100 border-0">
-        {cards.map(({ title, image, text, url, id }) => (
-          <div className="col-md-6" key={id}>
-            <Card imageSource={image} title={title} text={text} url={url} />
-          </div>
-        ))}
+    <div className="title">
+      <h2 className="text-center font-weight-bold mb-5">Bonus Welcome Comparator</h2>
+      <div className="subtitle">
+      <h5 className="text-center font-weight-bold">Ecco il tuo comparatore bonus definitivo e aggiornato.</h5>
+      <h5 className="text-center font-weight-bold">Confrontiamo i bonus di benvenuto dei vari operatori di gioco online con regolare licenza aams.</h5>
+      <h5 className="text-center font-weight-bold"> Oltre ai bonus è possibile trovare altre informazioni per conoscere meglio la sala e scegliere cosi tra una vasta offerta di possibilitá.</h5>
       </div>
-    </div>
+    <div className="container d-flex justify-content-center align-items-center border-0">
+        <div className="row justify-content-center align-items-center  h-100 border-0">
+          {cards.map(({ title, image, text, url, id }) => (
+            <div className="col-md-6" key={id}>
+              <Card imageSource={image} title={title} text={text} url={url} />
+            </div>
+          ))}
+        </div>
+      </div>
+      </div>
   );
 }
 

@@ -8,12 +8,14 @@ const Footer = () => {
     return(       
         <div class="container">
             <div class="row">
-                    <div className="col text-secondary">
+                    <div className="col">
+                        <div className="linklist">
                         <ul>
-                            <li><a href="https://www.bonuswelcome.com/privacy/ text-secondary">Privacy & Cookies</a></li>
-                            <li><a href="https://www.bonuswelcome.com/gioco_responsabile/">Gioco Responsabile</a></li>
-                            <li><a href="https://www.bonuswelcome.com/disclaimer/">Disclaimer</a></li>
+                            <li><a href="https://www.bonuswelcome.com/privacy/ text-secondary" className="linklist">Privacy & Cookies</a></li>
+                            <li><a href="https://www.bonuswelcome.com/gioco_responsabile/" className="linklist">Gioco Responsabile</a></li>
+                            <li><a href="https://www.bonuswelcome.com/disclaimer/" className="linklist">Disclaimer</a></li>
                         </ul>
+                        </div>
                     </div>
                     <div className="col">
                         <div className="mid-footy">

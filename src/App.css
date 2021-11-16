@@ -4,13 +4,17 @@
 }
 .row{
   background-color: #1a233a;
-  color: white;
+  color:#a8c5ff
 }
-.content{
-  padding:0px;
+.container{
+  color:#a8c5ff
 }
 .mid-footy{
   margin-right:0px;
   width: 95%;
+  color:#a8c5ff
+}
 
+.linklist{
+  color:#a8c5ff;
 }
