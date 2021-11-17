@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import "./card.css";
 
-function Card({ imageSource, title, text, url }) {
+function Card({ imageSource, title, text, url, payments }) {
   return (
     
     <div className="card col text-center animate__animated animate__fadeInUp">
