@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../App.css";
 import footimg from '../assets/footer/18.svg';
 import footimg1 from '../assets/footer/Gioca_Senza_Esagerare.svg';
@@ -11,9 +12,9 @@ const Footer = () => {
                     <div className="col">
                         <div className="linklist">
                         <ul>
-                            <li><a href="https://www.bonuswelcome.com/privacy/ text-secondary" className="linklist">Privacy & Cookies</a></li>
-                            <li><a href="https://www.bonuswelcome.com/gioco_responsabile/" className="linklist">Gioco Responsabile</a></li>
-                            <li><a href="https://www.bonuswelcome.com/disclaimer/" className="linklist">Disclaimer</a></li>
+                            <li> <Link to="/privacy" className="linklist">Privacy & Cookies</Link></li>
+                            <li><Link to="/giocoresponsabile" className="linklist">Gioco Responsabile</Link></li>
+                            <li><Link to="/disclaimer" className="linklist">Disclaimer</Link></li>
                         </ul>
                         </div>
                     </div>
@@ -32,7 +33,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div  className="col-md">
+                    <div  className="col-md font-weight-bold">
                         Il gioco può causare dipendenza patologica  
                         | Gioca Responsabilmente |
                         © Ltd 2021
