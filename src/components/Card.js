@@ -17,25 +17,33 @@ function Card({ imageSource, title, text, url, payments }) {
         </div>
         <div className="content">
         <div className="card-low">
+          <div className="row bg-transparent">
+          <div className="col-6">
           <a
-          href={url ? url : "#!"}
+          href={url}
           target="_blank"
           className="btn btn-primary font-weight-bold"
           rel="noreferrer"
           >
             Verifica Offerta
           </a>
-          <a
-          href={url ? url : "#!"}
-          target="_blank"
-          className="btn border-0 font-weight-light text-white"
-          rel="noreferrer"
-          >
+          </div>
+          <div className="col-6">
+          <button
+          className="tycbtn"
+          data-trigger="click" 
+          data-toggle="tooltip" 
+          data-placement="bottom" 
+          title="" 
+          data-original-title="Offerte e Bonus sono soggetti a cambi da parte degli Advertisers. Bonuswelcome.com non si assume alcuna responsabilitá e vi invita a verificare la congruenza delle informazioni riportate. " >
           Si applicano T&C
-          </a>
+          </button>
+          </div>
+          </div>
+          </div>
         </div>
       </div>
-    </div>
+
   );
 }
 
